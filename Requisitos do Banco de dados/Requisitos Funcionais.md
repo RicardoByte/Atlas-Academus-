@@ -54,7 +54,7 @@ ___
 - **RF-ATA-032**: O sistema deve registrar manutenções preventivas e corretivas
 - **RF-ATA-033**: O sistema deve controlar o status dos equipamentos (disponível, em manutenção, fora de uso)
 
-### 8. Relatórios e Consultas
+### 8. Consultas
 
 - **RF-ATA-034**: O sistema deve gerar relatórios financeiros (receitas, inadimplência, previsões)
 - **RF-ATA-035**: O sistema deve gerar relatórios de alunos ativos/inativos
