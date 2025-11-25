@@ -69,7 +69,9 @@ CREATE TABLE mensalidade (
     status VARCHAR(30) CHECK (status IN ('pendente', 'pago', 'atrasado', 'cancelado')) DEFAULT 'pendente',
     forma_pagamento VARCHAR(50) CHECK (forma_pagamento IN ('dinheiro', 'debito', 'credito', 'pix', 'boleto')),
     observacao TEXT,
-    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (aluno_id) REFERENCES aluno(id) ON DELETE CASCADE,
+    FOREIGN KEY (plano_id) REFERENCES plano(id) ON DELETE RESTRICT
 );
 
 CREATE INDEX idx_mensalidade_aluno ON mensalidade(aluno_id);
